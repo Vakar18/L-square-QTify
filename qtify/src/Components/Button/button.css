@@ -7,4 +7,11 @@
     border-radius: 12px;
     font-weight: 600;
     font-size: 16px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--css-primary);
+    color: var(--css-black);
+    transition: ease-in-out 0.3s;
+   
 }
