@@ -1,8 +1,14 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/navbar"
+import Hero from "./Components/HeroSection/hero";
+import Navbar from "./Components/Navbar/navbar";
+import Card from "./Components/Card/card";
 function App() {
   return (
-    < Navbar/>
+    <>
+      <Navbar />
+      <Hero />
+      <Card />
+    </>
   );
 }
 
