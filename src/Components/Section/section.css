@@ -1,0 +1,16 @@
+.title {
+    font-size: 20px;
+    color: var(--css-white);
+    margin-bottom: 5px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section {
+    padding: 30px;
+    width: 100%;
+}

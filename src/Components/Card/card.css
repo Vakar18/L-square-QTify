@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-  margin: 50px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 .card {
   border-radius: 10px;
@@ -37,4 +38,11 @@
 .card-label {
   height: 30px;
   color: var(--css-white);
+  margin-top: 5px;
+}
+
+.card-wrapper:hover{
+  transform: translate(-9px,9px);
+  box-shadow: 7px 7px var(--css-primary);
+  transition: 0.7s;
 }
