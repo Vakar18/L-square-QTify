@@ -42,7 +42,7 @@
 }
 
 .card-wrapper:hover{
-  transform: translate(-9px,9px);
+  transform: translate(-9px,-9px);
   box-shadow: 7px 7px var(--css-primary);
   transition: 0.7s;
 }
