@@ -4,7 +4,7 @@ import { useState } from "react";
 import Carousel from "../Carousel/carousel"
 
 
-export default ({ title, data }) => {
+export default ({ navId, title, data }) => {
 
 const [isCollaspsed, setIsCollapsed] = useState(false)
 
@@ -17,7 +17,7 @@ const [isCollaspsed, setIsCollapsed] = useState(false)
         setIsCollapsed(!isCollaspsed)
       }}>{isCollaspsed? "Show All": "Collapse"}</h1>
       </div>
-      {isCollaspsed ? <Carousel data={data}/> : <div className="card-container">
+      {isCollaspsed ? <Carousel navId={navId} data={data}/> : <div className="card-container">
         {data.map((cardData) => (
           <Card
             key={cardData.id}
