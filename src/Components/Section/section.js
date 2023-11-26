@@ -24,6 +24,7 @@ const [isCollaspsed, setIsCollapsed] = useState(false)
             imgSrc={cardData.image}
             followersCount={cardData.follows}
             label={cardData.title}
+            songsCount={cardData.songs.length}
           />
         ))}
       </div>}

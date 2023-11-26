@@ -25,6 +25,7 @@ export default ({ navId, data }) => {
               imgSrc={cardData.image}
               followersCount={cardData.follows}
               label={cardData.title}
+              songsCount={1}
             />
           </SwiperSlide>
         ))}
