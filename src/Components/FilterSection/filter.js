@@ -27,7 +27,7 @@ export default ({ title, data , filters, executeFiter}) => {
       >
       {filters.map( f => <Tab className='tab' key={f.key} label={f.label}/>)}
       </Tabs>
-      <Carousel data={data} navId="filter" />
+      <Carousel data={data} navId="filter" songsCount={1}/>
     </div>
   );
 };

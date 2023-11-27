@@ -15,6 +15,7 @@ function App() {
   const [filterdSongs, setFilteredSongs] = useState([]);
   const [genres, setGenres] = useState([]);
 
+
   useEffect(() => {
     axios.get(`${ENDPOINT}albums/top`).then(({ data }) => {
       setTopAlbums(data);
@@ -37,7 +38,7 @@ function App() {
       <Navbar />
       <Hero />
       <Section navId="ta" title="Top Albums" data={topAlbums} />
-      <Section navId="na" title="New Albums" data={newAlbums} />
+      <Section navId="na" title="New Albums" data={newAlbums}  />
       <FilterSection title="Songs" data={filterdSongs} filters={genres}
       executeFiter = {(genre)=> {
         if(genre === "all"){

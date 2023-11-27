@@ -9,14 +9,17 @@ import "swiper/css/navigation";
 
 import "./carousel.css";
 
-export default ({ navId, data }) => {
+export default ({ navId, data, songsC }) => {
   return (
     <div className="carousel-container">
       <Swiper
         modules={[Virtual, Navigation, Pagination]}
         slidesPerView={7}
         spaceBetween={30}
-        navigation={{ nextEl: `.arrow-right-${navId}`, prevEl: `.arrow-left-${navId}` }}
+        navigation={{
+          nextEl: `.arrow-right-${navId}`,
+          prevEl: `.arrow-left-${navId}`,
+        }}
         virtual
       >
         {data.map((cardData) => (
@@ -24,13 +27,14 @@ export default ({ navId, data }) => {
             <Card
               imgSrc={cardData.image}
               followersCount={cardData.follows}
+              likesCount={cardData.likes}
               label={cardData.title}
-              songsCount={1}
+              songsCount={songsC}
             />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className= {`arrow-left-${navId} arrow-left arrow`}>
+      <div className={`arrow-left-${navId} arrow-left arrow`}>
         <img src="leftIcon.png" />
       </div>
       <div className={`arrow-right-${navId} arrow-right arrow`}>
