@@ -1,0 +1,29 @@
+#panel1a-header {
+  background-color: var(--css-black);
+  color: var(--css-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500 ;
+  font-size: 20px;
+}
+#panel2a-header {
+  background-color: var(--css-black);
+  color: var(--css-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif ;
+  font-weight: 500 ;
+  font-size: 20px ;
+}
+.heading {
+  color: var(--css-white);
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+.accordion-section {
+  background-color: var(--css-white);
+}

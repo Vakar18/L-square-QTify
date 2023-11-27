@@ -5,6 +5,7 @@ import Hero from "./Components/HeroSection/hero";
 import Navbar from "./Components/Navbar/navbar";
 import Section from "./Components/Section/section";
 import FilterSection from "./Components/FilterSection/filter";
+import Accordion from "./Components/Accordions/accordion";
 
 function App() {
   const ENDPOINT = "https://qtify-backend-labs.crio.do/";
@@ -48,6 +49,7 @@ function App() {
         }
       }}
       />
+      <Accordion/>
     </>
   );
 }
